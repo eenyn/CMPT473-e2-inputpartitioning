@@ -1,1 +1,5 @@
-[{"Col1":"Lorem ipsum","field2":"1234   ","Col3":"happy"},{"Col1":4,"field2":"true","Col3":"\"dog","field4":" cat\""},{"Col1":"null","field2":"","Col3":"\"false\""}]
+[
+{"Col1":"Lorem ipsum","field2":"1234   ","Col3":"happy"},
+{"Col1":4,"field2":"true","Col3":"\"dog","field4":" cat\""},
+{"Col1":"null","field2":"","Col3":"\" false \""},
+]
