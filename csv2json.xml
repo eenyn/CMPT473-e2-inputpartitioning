@@ -82,14 +82,6 @@
       <basechoices />
       <invalidValues />
     </Parameter>
-    <Parameter id="10" name="downstreamFormat" type="1">
-      <values>
-        <value>FORM_LINE</value>
-        <value>FORM_ARRAY</value>
-      </values>
-      <basechoices />
-      <invalidValues />
-    </Parameter>
   </Parameters>
   <OutputParameters />
   <Relations />
@@ -107,7 +99,6 @@
       <Value>false</Value>
       <Value>PARSE_NUMBER</Value>
       <Value>false</Value>
-      <Value>FORM_ARRAY</Value>
     </Testcase>
     <Testcase TCNo="1">
       <Value>2</Value>
@@ -121,7 +112,6 @@
       <Value>true</Value>
       <Value>PARSE_STRING</Value>
       <Value>true</Value>
-      <Value>FORM_LINE</Value>
     </Testcase>
     <Testcase TCNo="2">
       <Value>3</Value>
@@ -135,7 +125,6 @@
       <Value>false</Value>
       <Value>PARSE_STRING</Value>
       <Value>false</Value>
-      <Value>FORM_LINE</Value>
     </Testcase>
     <Testcase TCNo="3">
       <Value>4</Value>
@@ -149,7 +138,6 @@
       <Value>true</Value>
       <Value>PARSE_NUMBER</Value>
       <Value>true</Value>
-      <Value>FORM_ARRAY</Value>
     </Testcase>
     <Testcase TCNo="4">
       <Value>5</Value>
@@ -163,7 +151,6 @@
       <Value>true</Value>
       <Value>PARSE_NUMBER</Value>
       <Value>false</Value>
-      <Value>FORM_LINE</Value>
     </Testcase>
     <Testcase TCNo="5">
       <Value>6</Value>
@@ -177,7 +164,6 @@
       <Value>false</Value>
       <Value>PARSE_STRING</Value>
       <Value>true</Value>
-      <Value>FORM_ARRAY</Value>
     </Testcase>
     <Testcase TCNo="6">
       <Value>7</Value>
@@ -191,7 +177,6 @@
       <Value>true</Value>
       <Value>PARSE_STRING</Value>
       <Value>false</Value>
-      <Value>FORM_LINE</Value>
     </Testcase>
     <Testcase TCNo="7">
       <Value>8</Value>
@@ -205,7 +190,6 @@
       <Value>false</Value>
       <Value>PARSE_NUMBER</Value>
       <Value>true</Value>
-      <Value>FORM_ARRAY</Value>
     </Testcase>
     <Testcase TCNo="8">
       <Value>9</Value>
@@ -215,11 +199,10 @@
       <Value>false</Value>
       <Value>true</Value>
       <Value>false</Value>
-      <Value>false</Value>
       <Value>true</Value>
+      <Value>false</Value>
       <Value>PARSE_NUMBER</Value>
       <Value>true</Value>
-      <Value>FORM_LINE</Value>
     </Testcase>
     <Testcase TCNo="9">
       <Value>10</Value>
@@ -227,13 +210,12 @@
       <Value>DELIMIT_DOUBLE</Value>
       <Value>true</Value>
       <Value>true</Value>
-      <Value>true</Value>
       <Value>false</Value>
-      <Value>true</Value>
       <Value>false</Value>
-      <Value>PARSE_NUMBER</Value>
       <Value>false</Value>
-      <Value>FORM_ARRAY</Value>
+      <Value>false</Value>
+      <Value>PARSE_STRING</Value>
+      <Value>false</Value>
     </Testcase>
   </Testset>
   <Header>
@@ -248,13 +230,12 @@
     <Value>CHECKCOLUMN</Value>
     <Value>COLPARSER</Value>
     <Value>NULLOBJECT</Value>
-    <Value>DOWNSTREAMFORMAT</Value>
   </Header>
   <Stat-Data>
-    <ExecutionTime>0.034</ExecutionTime>
+    <ExecutionTime>0.039</ExecutionTime>
     <MaxDomainSize>3</MaxDomainSize>
     <MinDomainSize>2</MinDomainSize>
-    <TotalNoOfCombination>240</TotalNoOfCombination>
+    <TotalNoOfCombination>198</TotalNoOfCombination>
     <TotalNoOfTests>10</TotalNoOfTests>
     <Algorithm>IPOG</Algorithm>
   </Stat-Data>
