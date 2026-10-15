@@ -83,8 +83,7 @@ describe("converter2()", () => {
         const out_fpath = __dirname + '/OutputFiles/output2.json';
         const err_fpath = __dirname + '/ErrorMessages/error2.json';
         const exp_fpath = __dirname + '/ExpectedOutputs/expected2.json';
-        
-
+    
         const converter2 = csv({
             output: "json",
             quote: "\"",
@@ -154,7 +153,6 @@ describe("converter3()", () => {
         const out_fpath = __dirname + '/OutputFiles/output3.json';
         const err_fpath = __dirname + '/ErrorMessages/error3.json';
         const exp_fpath = __dirname + '/ExpectedOutputs/expected3.json';
-        
 
         const converter3 = csv({
             output: "csv",
