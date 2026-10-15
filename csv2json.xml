@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<System name="csv2json">
+  <Parameters>
+    <Parameter id="0" name="output" type="1">
+      <values>
+        <value>OUT_JSON</value>
+        <value>OUT_CSV</value>
+        <value>OUT_LINE</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="1" name="quote" type="1">
+      <values>
+        <value>DELIMIT_OFF</value>
+        <value>DELIMIT_DOUBLE</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="2" name="trim" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="3" name="checkType" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="4" name="ignoreEmpty" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="5" name="noheader" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="6" name="flatKeys" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="7" name="checkColumn" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="8" name="colParser" type="1">
+      <values>
+        <value>PARSE_STRING</value>
+        <value>PARSE_NUMBER</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="9" name="nullObject" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="10" name="downstreamFormat" type="1">
+      <values>
+        <value>FORM_LINE</value>
+        <value>FORM_ARRAY</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+  </Parameters>
+  <OutputParameters />
+  <Relations />
+  <Constraints />
+  <Testset doi="2">
+    <Testcase TCNo="0">
+      <Value>1</Value>
+      <Value>OUT_JSON</Value>
+      <Value>DELIMIT_OFF</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>PARSE_NUMBER</Value>
+      <Value>false</Value>
+      <Value>FORM_ARRAY</Value>
+    </Testcase>
+    <Testcase TCNo="1">
+      <Value>2</Value>
+      <Value>OUT_JSON</Value>
+      <Value>DELIMIT_DOUBLE</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>PARSE_STRING</Value>
+      <Value>true</Value>
+      <Value>FORM_LINE</Value>
+    </Testcase>
+    <Testcase TCNo="2">
+      <Value>3</Value>
+      <Value>OUT_CSV</Value>
+      <Value>DELIMIT_OFF</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>PARSE_STRING</Value>
+      <Value>false</Value>
+      <Value>FORM_LINE</Value>
+    </Testcase>
+    <Testcase TCNo="3">
+      <Value>4</Value>
+      <Value>OUT_CSV</Value>
+      <Value>DELIMIT_DOUBLE</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>PARSE_NUMBER</Value>
+      <Value>true</Value>
+      <Value>FORM_ARRAY</Value>
+    </Testcase>
+    <Testcase TCNo="4">
+      <Value>5</Value>
+      <Value>OUT_LINE</Value>
+      <Value>DELIMIT_OFF</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>PARSE_NUMBER</Value>
+      <Value>false</Value>
+      <Value>FORM_LINE</Value>
+    </Testcase>
+    <Testcase TCNo="5">
+      <Value>6</Value>
+      <Value>OUT_LINE</Value>
+      <Value>DELIMIT_DOUBLE</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>PARSE_STRING</Value>
+      <Value>true</Value>
+      <Value>FORM_ARRAY</Value>
+    </Testcase>
+    <Testcase TCNo="6">
+      <Value>7</Value>
+      <Value>OUT_JSON</Value>
+      <Value>DELIMIT_OFF</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>PARSE_STRING</Value>
+      <Value>false</Value>
+      <Value>FORM_LINE</Value>
+    </Testcase>
+    <Testcase TCNo="7">
+      <Value>8</Value>
+      <Value>OUT_CSV</Value>
+      <Value>DELIMIT_DOUBLE</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>PARSE_NUMBER</Value>
+      <Value>true</Value>
+      <Value>FORM_ARRAY</Value>
+    </Testcase>
+    <Testcase TCNo="8">
+      <Value>9</Value>
+      <Value>OUT_CSV</Value>
+      <Value>DELIMIT_OFF</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>PARSE_NUMBER</Value>
+      <Value>true</Value>
+      <Value>FORM_LINE</Value>
+    </Testcase>
+    <Testcase TCNo="9">
+      <Value>10</Value>
+      <Value>OUT_LINE</Value>
+      <Value>DELIMIT_DOUBLE</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>PARSE_NUMBER</Value>
+      <Value>false</Value>
+      <Value>FORM_ARRAY</Value>
+    </Testcase>
+  </Testset>
+  <Header>
+    <Value />
+    <Value>OUTPUT</Value>
+    <Value>QUOTE</Value>
+    <Value>TRIM</Value>
+    <Value>CHECKTYPE</Value>
+    <Value>IGNOREEMPTY</Value>
+    <Value>NOHEADER</Value>
+    <Value>FLATKEYS</Value>
+    <Value>CHECKCOLUMN</Value>
+    <Value>COLPARSER</Value>
+    <Value>NULLOBJECT</Value>
+    <Value>DOWNSTREAMFORMAT</Value>
+  </Header>
+  <Stat-Data>
+    <ExecutionTime>0.034</ExecutionTime>
+    <MaxDomainSize>3</MaxDomainSize>
+    <MinDomainSize>2</MinDomainSize>
+    <TotalNoOfCombination>240</TotalNoOfCombination>
+    <TotalNoOfTests>10</TotalNoOfTests>
+    <Algorithm>IPOG</Algorithm>
+  </Stat-Data>
+</System>
+
