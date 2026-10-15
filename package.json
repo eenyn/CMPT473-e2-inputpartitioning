@@ -1,0 +1,23 @@
+{
+  "name": "e2-mocha-test",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/eenyn/CMPT473-e2-inputpartitioning#readme",
+  "bugs": {
+    "url": "https://github.com/eenyn/CMPT473-e2-inputpartitioning/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eenyn/CMPT473-e2-inputpartitioning.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "csvtojson_testscript.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "^12.0.3"
+  }
+}
